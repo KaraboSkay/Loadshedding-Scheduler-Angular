@@ -1,6 +1,10 @@
 # EskomSeWattAngular
 
 ![DarkMode-AreaCards](https://github.com/KaraboSkay/Loadshedding-Schedules-Angular-App/assets/100129564/f9078738-858f-46a0-a564-6517b3d1b6e5)
+![DarkMode-Schedule-cards](https://github.com/KaraboSkay/Loadshedding-Schedules-Angular-App/assets/100129564/2144b4d3-904c-4800-95fb-17b2b943347b)
+
+![LightMode-AreaCards](https://github.com/KaraboSkay/Loadshedding-Schedules-Angular-App/assets/100129564/952b12a2-ba4e-4c26-8cf1-fe261cc386a9)
+![LightMode-ScheduleCards](https://github.com/KaraboSkay/Loadshedding-Schedules-Angular-App/assets/100129564/8369c782-2783-44d4-a4d6-44e1dcb6ebb1)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
 
