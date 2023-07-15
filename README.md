@@ -1,5 +1,7 @@
 # EskomSeWattAngular
 
+![DarkMode-AreaCards](https://github.com/KaraboSkay/Loadshedding-Schedules-Angular-App/assets/100129564/f9078738-858f-46a0-a564-6517b3d1b6e5)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
 
 ## Development server
