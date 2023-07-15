@@ -1,0 +1,8 @@
+<div style="display: flex; align-items: center; justify-content: center; min-height: 60px;">
+    <app-search (searchClicked)="onSearch($event)"></app-search>
+    <button (click)="toggleDarkTheme()" style="display: flex; align-items: center; justify-content: center; margin-left: 100px; padding: 8px; background-color:var(--component-color); border-radius: 50%; margin-top: -35px;">
+      <i class="material-icons">brightness_6</i>
+    </button>
+</div>
+<app-screen-one *ngIf="showScreenOne" (buttonClicked)="onButtonClicked($event)"></app-screen-one>
+<app-screen-two *ngIf="showScreenTwo"></app-screen-two>

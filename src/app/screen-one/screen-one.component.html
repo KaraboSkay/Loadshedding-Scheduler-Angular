@@ -1,0 +1,13 @@
+<div class="area-cards">
+    <div class="card-container">
+          <div class="area-card" *ngFor="let areaCard of areaCards">
+            <div class="area">{{ areaCard.name }}</div>
+            <div class="button" [id]="areaCard.id" (click)="onClick(areaCard.id)">Choose Location</div>
+          </div>
+    </div>
+</div>
+
+
+
+
+  

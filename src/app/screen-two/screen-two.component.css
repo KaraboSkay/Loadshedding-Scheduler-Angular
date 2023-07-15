@@ -1,0 +1,10 @@
+.screen-two {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.screen-two.hidden {
+    display: none;
+  }

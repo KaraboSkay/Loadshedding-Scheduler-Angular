@@ -1,0 +1,60 @@
+.area-cards{
+    display: flex;
+    justify-content: center;
+  }
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.area-card {
+    display: block;
+    background-color: var(--component-color);
+    color: var(--text-color);
+    margin: 10px;
+    border-radius: 15%;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    width: 290px;
+    height: 290px;
+    position: relative;
+}
+  
+.area{
+    position: absolute;
+    display:wrap;
+    top:45px;
+    left:30px;
+    font-size:30px;
+    text-transform: uppercase;
+  }
+  
+.button{
+    position: absolute;
+    top:190px;
+    left:15px;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 20px 50px;
+    margin: 5px;
+    font-size: 18px;
+    font-weight:bold;
+}
+.button:hover{
+  background-position: right center; 
+  color: var(--btn-hover);
+  text-decoration: none;
+}
+  
+.button:active {
+    transform: scale(0.98);
+}
+  
+.button:focus {
+    outline: 0;
+}

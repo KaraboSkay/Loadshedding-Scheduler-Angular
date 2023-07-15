@@ -1,0 +1,19 @@
+<div class="card-container">
+    <div class="schedule-card" *ngFor="let scheduleCard of scheduleCards" [ngClass]="{'current-card': dayName === scheduleCard.weekday}">
+      <div class="header" [ngClass]="{'hidden': !scheduleCard.schedule || scheduleCard.schedule.length === 0}">
+        <small class="Stage">{{scheduleCard.stage}}</small>
+        <small class="weekday">{{scheduleCard.weekday}}</small>
+      </div>
+      <div class="date-time-containers">
+        <ng-container *ngIf="scheduleCard.schedule && scheduleCard.schedule.length > 0">
+          <div class="date-time-container" id="date-time-container" *ngFor="let time of scheduleCard.schedule.split(', ')">
+            <div class="timestamp">{{time}}</div>
+          </div>
+        </ng-container>
+        <div class="loadshedding-suspended" *ngIf="!scheduleCard.schedule || scheduleCard.schedule.length === 0">
+          <img src="../../assets/lightning-color.png" alt="lighting-color">
+          <p>Loadshedding<br><small class="LS-text">suspended</small></p>
+        </div>
+      </div>
+    </div>
+  </div>  

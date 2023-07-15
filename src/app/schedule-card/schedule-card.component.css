@@ -1,0 +1,124 @@
+:root {
+    --background: var(--background);
+    --foreground: var(--foreground);
+  }
+  
+  .card-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .schedule-card {
+      display: block;
+      background-color:var(--component-color);
+      margin: 10px;
+      border-radius: 15%;
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+      width: 290px;
+      height: 290px;
+      position: relative;
+  }
+  
+  .header {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      top: 35px;
+      left: 25px;
+    }
+  
+    .header.hidden {
+      display: none;
+    }
+  
+    small + small {
+      margin-left: 105px;
+    }
+  
+    .Stage {
+      color: var(--foreground);
+      font-size: 20px;
+    }
+    
+    .weekday {
+      color: var(--foreground);
+      position: inherit;
+      font-size: 20px;
+      font-weight: bold;
+      left:30px;
+    }
+    
+  
+    .date-time-containers{
+      display: flex ;
+      flex-direction: column;
+      position: absolute;
+      top: 55%;
+      left: 100px;
+      transform: translate(-50%, -50%);
+    }
+    
+    .date-time-container{
+      position: relative; 
+      margin-bottom: 10px;
+      margin-top: 10px; 
+      padding: 7px;
+      width: 150%;
+      height: 25%;
+      border-left: 5px solid var(--foreground);
+      background-color: var(--timestamp-bkg-color);
+      color: var(--foreground);
+      text-indent: 5px;
+      text-align: center;
+    }
+    
+    
+    .date-time-container .timestamp {
+      font-size: 23px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .date-time-container.hidden {
+      display: none;
+    }
+  
+    .loadshedding-suspended {
+      position: relative;
+      top: 60px;
+      left:25px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  
+    .loadshedding-suspended img {
+      position: absolute;
+      top: -100px;
+      left: 140px;
+      width: 120px;
+    }
+    .loadshedding-suspended .LS-text {
+      color: green;
+    }
+    
+    .loadshedding-suspended.hidden {
+      display: none;
+    }
+
+    .current-card{
+      background-color:var(--foreground);
+      border-color: var(--foreground);
+    }
+
+    .schedule-card.current-card .Stage{
+      color:var(--timestamp-bkg-color)
+    }
+    
+    .schedule-card.current-card .weekday{
+      color:var(--timestamp-bkg-color)
+    }
